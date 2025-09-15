@@ -1,0 +1,1 @@
+/home/filip/Desktop/github_repos/Code_diary/september_2025/binary_sort_rust_implementation/target/debug/binary_sort_rust_implementation: /home/filip/Desktop/github_repos/Code_diary/september_2025/binary_sort_rust_implementation/src/main.rs
