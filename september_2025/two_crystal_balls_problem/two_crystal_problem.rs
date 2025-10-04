@@ -3,8 +3,8 @@
 
 
 fn main() {
-    let mut arr = vec![false; 100];
-    for i in 67..100 {
+    let mut arr = vec![false; 101];
+    for i in 67..101 {
         arr[i] = true;
     }
 
@@ -15,7 +15,8 @@ fn main() {
 
 fn crystal_problem(arr: &[bool]) -> Result<usize, &str> {
     // square_root(len(arr))
-    let sq_number = arr.len().isqrt();
+    // prevent step_by 0 with .max(1)
+    let sq_number = arr.len().isqrt().max(1);
     // iterate with square root steps, until you find true
     for i in (0..arr.len()).step_by(sq_number) {
         if arr[i] == true {
